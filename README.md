@@ -3,11 +3,10 @@
 A modern community project to bring the flat, clean aesthetic of **Proton Mail** to **Mozilla Thunderbird (Version 128+ "Nebula")**.
 
 > [!IMPORTANT]
-> **Status: Alpha / Work-in-Progress** > This theme is in early development. It currently focuses on the main Mail interface, Tab-bar, and Sidebar. Other areas like Calendar or Settings are planned. Contributions are very welcome!
+> **Status: Alpha / Work-in-Progress** — This theme is in early development. It currently focuses on the main Mail interface, Tab-bar, and Sidebar. Other areas like Calendar or Settings are planned for future updates.
 
 ## 📸 Preview
 <img width="1512" height="953" alt="demo thunderbird proton theme screenshot" src="https://github.com/user-attachments/assets/7465e9a7-3944-41a0-b5b3-d3c412471ba7" />
-
 
 ## ✨ Features
 - **Proton Color Palette:** Uses the authentic Proton dark grays and accent colors.
@@ -31,10 +30,14 @@ To allow custom CSS, you need to toggle a setting:
 1. Locate your Thunderbird profile folder:
    - **Windows:** Press `Win + R`, type `%APPDATA%\Thunderbird\Profiles\`
    - **macOS:** `~/Library/Thunderbird/Profiles/`
+   - **Linux:** `~/.thunderbird/` (or run `thunderbird --ProfileManager` to find the exact path)
 2. Open your active profile folder (usually `[random-string].default-release`).
 3. Create a folder named `chrome` (all lowercase) if it doesn't exist.
 4. Copy the `userChrome.css` from this repository into that `chrome` folder.
 5. Restart Thunderbird.
+
+> [!TIP]
+> **Linux users:** You can also find your profile path by opening Thunderbird, going to **Help** > **Troubleshooting Information**, and looking for the **Profile Directory** entry. Click **Open Directory** to jump straight to it.
 
 ## 🎨 Colors
 | Element | Hex Code |
@@ -51,7 +54,7 @@ Since this is a Work-in-Progress, I appreciate any help!
 - Want to style a new element (e.g., the Calendar)? Submit a **Pull Request**.
 
 ## ⚖️ Disclaimer
-This is an **unofficial community project**. It is not affiliated with, or endorsed by, Proton AG. All trademarks, logos, and design rights of Proton Mail are the property of Proton AG. This theme is for UI customization purposes only.
+This is an **unofficial community project**. It is not affiliated with, or endorsed by, Proton AG. All trademarks, logos, and design rights of Proton Mail are the property of Proton AG. This theme is purely cosmetic and does not interact with any Proton services or accounts.
 
 ## 📜 License
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
