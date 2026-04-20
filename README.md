@@ -37,7 +37,13 @@ To allow custom CSS, you need to toggle a setting:
 5. Restart Thunderbird.
 
 > [!TIP]
-> **Linux users:** You can also find your profile path by opening Thunderbird, going to **Help** > **Troubleshooting Information**, and looking for the **Profile Directory** entry. Click **Open Directory** to jump straight to it.
+> **Linux users:** You can also find your profile path by opening Thunderbird, going to **Help** > **Troubleshooting Information**, and looking for the **Profile Directory** entry. Click **Open Directory** to go directly to your profile folder.
+
+## 🧩 Recommended Add-on: Sender Cleanup
+
+This theme pairs perfectly with the **[Sender Cleanup Add-on](https://github.com/tinyprojekt/thunderbird-sender-cleanup)** – it hides email addresses in the card view and shows only the display name, keeping the inbox even cleaner.
+
+👉 **[View Sender Cleanup Add-on →](https://github.com/tinyprojekt/thunderbird-sender-cleanup)**
 
 ## 🎨 Colors
 | Element | Hex Code |
@@ -54,7 +60,7 @@ Since this is a Work-in-Progress, I appreciate any help!
 - Want to style a new element (e.g., the Calendar)? Submit a **Pull Request**.
 
 ## ⚖️ Disclaimer
-This is an **unofficial community project**. It is not affiliated with, or endorsed by, Proton AG. All trademarks, logos, and design rights of Proton Mail are the property of Proton AG. This theme is purely cosmetic and does not interact with any Proton services or accounts.
+This is an **unofficial community project**. It is not affiliated with, or endorsed by, Proton AG. All trademarks, logos, and design rights of Proton Mail are the property of Proton AG. This theme is provided as-is for personal use.
 
 ## 📜 License
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
