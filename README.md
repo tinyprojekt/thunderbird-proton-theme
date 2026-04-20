@@ -6,7 +6,8 @@ A modern community project to bring the flat, clean aesthetic of **Proton Mail**
 > **Status: Alpha / Work-in-Progress** > This theme is in early development. It currently focuses on the main Mail interface, Tab-bar, and Sidebar. Other areas like Calendar or Settings are planned. Contributions are very welcome!
 
 ## 📸 Preview
-*(Upload your screenshots to the `img/` folder and link them here)*
+<img width="1512" height="953" alt="demo thunderbird proton theme screenshot" src="https://github.com/user-attachments/assets/7465e9a7-3944-41a0-b5b3-d3c412471ba7" />
+
 
 ## ✨ Features
 - **Proton Color Palette:** Uses the authentic Proton dark grays and accent colors.
