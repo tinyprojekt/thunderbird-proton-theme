@@ -14,7 +14,17 @@ A modern community project to bring the flat, clean aesthetic of **Proton Mail**
 - **Improved Sidebar:** Rounded folder indicators ("Island-Look") without distracting system focus-frames or outlines.
 - **Custom Badges:** Unread message counts styled in the original Proton Purple (`#8838ff`).
 - **Clean UI:** Minimized borders and dividers for a streamlined experience.
+- **Dark Reading Pane:** The full message body is styled dark – including background, text, links, and blockquotes.
 - **Architecture Support:** Verified on **aarch64 (ARM)** and standard x86 systems.
+
+## 🗂 File Overview
+
+| File | Purpose |
+| :--- | :--- |
+| `userChrome.css` | Styles the Thunderbird UI chrome – sidebar, toolbar, tabs, message list, header area, buttons, etc. |
+| `userContent.css` | Styles the **message reading pane** (email body). Thunderbird loads the actual email content inside a separate browser element (`browser#messagepane`) that acts like an iframe – `userChrome.css` cannot reach it. This file targets that inner document directly. |
+
+Both files must be placed in the `chrome/` folder of your Thunderbird profile.
 
 ## 🛠 Installation
 
@@ -26,14 +36,14 @@ To allow custom CSS, you need to toggle a setting:
 4. Search for `toolkit.legacyUserProfileCustomizations.stylesheets`.
 5. Double-click to set it to **true**.
 
-### 2. Add userChrome.css
+### 2. Add the CSS files
 1. Locate your Thunderbird profile folder:
    - **Windows:** Press `Win + R`, type `%APPDATA%\Thunderbird\Profiles\`
    - **macOS:** `~/Library/Thunderbird/Profiles/`
    - **Linux:** `~/.thunderbird/` (or run `thunderbird --ProfileManager` to find the exact path)
 2. Open your active profile folder (usually `[random-string].default-release`).
 3. Create a folder named `chrome` (all lowercase) if it doesn't exist.
-4. Copy the `userChrome.css` from this repository into that `chrome` folder.
+4. Copy **both** `userChrome.css` and `userContent.css` from this repository into that `chrome` folder.
 5. Restart Thunderbird.
 
 > [!TIP]
