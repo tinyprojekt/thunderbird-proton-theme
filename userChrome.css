@@ -1,7 +1,6 @@
 /* =====================================================
    PROTON MAIL THEME FOR THUNDERBIRD 128+
-   Created by: tinyprojekt (GitHub)
-   All selectors sourced directly from Browser Inspector
+   All selectors sourced directly from browser inspector
    ===================================================== */
 
 :root {
@@ -335,13 +334,13 @@ tr[is="thread-card"].selected .thread-card-excerpt {
 }
 
 /* Truncate long sender names with ellipsis */
+/* Truncate long sender names with ellipsis */
 #threadTree tr[is="thread-card"] .sender {
-    display: inline-block !important;
-    max-width: 18ch !important;
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
-    vertical-align: bottom !important;
 }
 
 #threadTree tr[is="thread-card"] .thread-card-row {
@@ -448,8 +447,13 @@ a[href^="mailto"] {
 /* ─── MESSAGE PANE ───────────────────────────────── */
 #messagePane,
 #messageBrowser,
-#messagepaneboxwrapper {
+#messagepaneboxwrapper,
+#messagepane,
+browser#messagepane,
+vbox#messagepanebox,
+xul\:browser#messagepane {
     background-color: #16141c !important;
+    color-scheme: dark !important;
 }
 
 /* ─── PRIVACY / REMOTE CONTENT BANNER ───────────── */
@@ -471,7 +475,7 @@ notification-message.infobar {
 
 /* "Settings" button inside the banner: Proton green */
 notification-message.infobar button {
-    background-color: #2fd6b5 !important;
+    background-color: #e53265 !important;
     color: #16141c !important;
     border: none !important;
     border-radius: 6px !important;
@@ -549,72 +553,4 @@ menuseparator {
     border-radius: 999px !important;
     border: none !important;
     font-weight: 600 !important;
-}
-
-/* =====================================================
-   SESSION FIXES — 2026-04
-   ===================================================== */
-
-/* ── Neue Nachricht Button – Plus/Icon Abstand ── */
-#folderPaneWriteMessage {
-    gap: 6px !important;
-    padding-inline: 12px !important;
-}
-
-#folderPaneWriteMessage::before {
-    margin-inline-end: 0 !important;
-    flex-shrink: 0 !important;
-}
-
-/* ── Card View – ausgewählte Karte pink ausgefüllt ── */
-tr[is="thread-card"][aria-selected="true"] td .card-container {
-    background-color: #e53265 !important;
-    border-color: #e53265 !important;
-    outline: none !important;
-}
-
-/* Texte in aktiver Karte weiß */
-tr[is="thread-card"][aria-selected="true"] .thread-card-row *,
-tr[is="thread-card"][aria-selected="true"] .thread-card-dynamic-row * {
-    color: #ffffff !important;
-}
-
-/* ── Card hover – kein pinker Border ── */
-tr[is="thread-card"]:hover td .card-container {
-    border-color: #34384e !important;
-    outline: none !important;
-}
-
-/* ── Absender immer sichtbar ── */
-.thread-card-row {
-    overflow: visible !important;
-    text-overflow: unset !important;
-    white-space: nowrap !important;
-    min-width: 0 !important;
-}
-
-.thread-card-column {
-    overflow: hidden !important;
-    min-width: 0 !important;
-}
-
-.thread-card-row > * {
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    min-width: 0 !important;
-    flex-shrink: 1 !important;
-}
-
-/* ── Einstellungen Button (Datenschutz-Banner) – pink ── */
-.notification-button.footer-button,
-.notification-button.small-button,
-button.notification-button {
-    background-color: #e53265 !important;
-    border-color: #e53265 !important;
-    color: #ffffff !important;
-}
-
-button.notification-button:hover {
-    background-color: #e84774 !important;
-    border-color: #e84774 !important;
 }
