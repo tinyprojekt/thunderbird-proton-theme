@@ -3,7 +3,7 @@
 A modern community project to bring the flat, clean aesthetic of **Proton Mail** to **Mozilla Thunderbird (Version 128+ "Nebula")**.
 
 > [!IMPORTANT]
-> **Status: Alpha / Work-in-Progress** — This theme is in early development. It currently focuses on the main Mail interface, Tab-bar, and Sidebar. Other areas like Calendar or Settings are planned for future updates.
+> **Status: Alpha / Work-in-Progress** — This theme is actively developed. It covers the main Mail interface, Tab-bar, Sidebar, Settings page, and Add-ons manager. Other areas like Calendar are planned for future updates.
 
 ## 📸 Preview
 <img width="1512" height="953" alt="demo thunderbird proton theme screenshot" src="https://github.com/user-attachments/assets/7465e9a7-3944-41a0-b5b3-d3c412471ba7" />
@@ -15,6 +15,11 @@ A modern community project to bring the flat, clean aesthetic of **Proton Mail**
 - **Custom Badges:** Unread message counts styled in the original Proton Purple (`#8838ff`).
 - **Clean UI:** Minimized borders and dividers for a streamlined experience.
 - **Dark Reading Pane:** The full message body is styled dark – including background, text, links, and blockquotes.
+- **Styled Settings Page:** The full Preferences/Settings UI is themed dark with Proton colors.
+- **Styled Add-ons Manager:** The Add-ons page matches the Settings page style with a flat sidebar.
+- **Proton Pink Checkboxes & Radio Buttons:** All XUL checkboxes and radio buttons use Proton Pink via CSS filter.
+- **Card View:** Active message card is highlighted with Proton Pink background.
+- **Notification Buttons:** Privacy notification action buttons styled in Proton Pink.
 - **Architecture Support:** Verified on **aarch64 (ARM)** and standard x86 systems.
 
 ## 🗂 File Overview
@@ -22,7 +27,7 @@ A modern community project to bring the flat, clean aesthetic of **Proton Mail**
 | File | Purpose |
 | :--- | :--- |
 | `userChrome.css` | Styles the Thunderbird UI chrome – sidebar, toolbar, tabs, message list, header area, buttons, etc. |
-| `userContent.css` | Styles the **message reading pane** (email body). Thunderbird loads the actual email content inside a separate browser element (`browser#messagepane`) that acts like an iframe – `userChrome.css` cannot reach it. This file targets that inner document directly. |
+| `userContent.css` | Styles content pages loaded inside Thunderbird: the **Preferences/Settings** page and the **Add-ons Manager**. Thunderbird loads these inside separate browser elements that `userChrome.css` cannot reach. |
 
 Both files must be placed in the `chrome/` folder of your Thunderbird profile.
 
@@ -45,6 +50,9 @@ To allow custom CSS, you need to toggle a setting:
 3. Create a folder named `chrome` (all lowercase) if it doesn't exist.
 4. Copy **both** `userChrome.css` and `userContent.css` from this repository into that `chrome` folder.
 5. Restart Thunderbird.
+
+> [!TIP]
+> **Alternative installation:** You can also install the theme as an `.xpi` extension file directly via **Add-ons Manager** → ⚙️ → **Install Add-on From File…**. This avoids the manual `chrome/` folder setup.
 
 > [!TIP]
 > **Linux users:** You can also find your profile path by opening Thunderbird, going to **Help** > **Troubleshooting Information**, and looking for the **Profile Directory** entry. Click **Open Directory** to go directly to your profile folder.

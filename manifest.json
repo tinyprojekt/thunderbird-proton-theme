@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Thunderbird Proton Theme",
   "description": "A dark theme inspired by Proton Mail for Mozilla Thunderbird 128+",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "tinyprojekt",
   "theme": {
     "colors": {

@@ -550,3 +550,71 @@ menuseparator {
     border: none !important;
     font-weight: 600 !important;
 }
+
+/* =====================================================
+   SESSION FIXES — 2026-04
+   ===================================================== */
+
+/* ── Neue Nachricht Button – Plus/Icon Abstand ── */
+#folderPaneWriteMessage {
+    gap: 6px !important;
+    padding-inline: 12px !important;
+}
+
+#folderPaneWriteMessage::before {
+    margin-inline-end: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+/* ── Card View – ausgewählte Karte pink ausgefüllt ── */
+tr[is="thread-card"][aria-selected="true"] td .card-container {
+    background-color: #e53265 !important;
+    border-color: #e53265 !important;
+    outline: none !important;
+}
+
+/* Texte in aktiver Karte weiß */
+tr[is="thread-card"][aria-selected="true"] .thread-card-row *,
+tr[is="thread-card"][aria-selected="true"] .thread-card-dynamic-row * {
+    color: #ffffff !important;
+}
+
+/* ── Card hover – kein pinker Border ── */
+tr[is="thread-card"]:hover td .card-container {
+    border-color: #34384e !important;
+    outline: none !important;
+}
+
+/* ── Absender immer sichtbar ── */
+.thread-card-row {
+    overflow: visible !important;
+    text-overflow: unset !important;
+    white-space: nowrap !important;
+    min-width: 0 !important;
+}
+
+.thread-card-column {
+    overflow: hidden !important;
+    min-width: 0 !important;
+}
+
+.thread-card-row > * {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+}
+
+/* ── Einstellungen Button (Datenschutz-Banner) – pink ── */
+.notification-button.footer-button,
+.notification-button.small-button,
+button.notification-button {
+    background-color: #e53265 !important;
+    border-color: #e53265 !important;
+    color: #ffffff !important;
+}
+
+button.notification-button:hover {
+    background-color: #e84774 !important;
+    border-color: #e84774 !important;
+}
