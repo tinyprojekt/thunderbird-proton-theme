@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "Thunderbird Proton Theme",
+  "description": "A dark theme inspired by Proton Mail for Mozilla Thunderbird 128+",
+  "version": "1.0.0",
+  "author": "tinyprojekt",
+  "theme": {
+    "colors": {
+      "frame": "#16141c",
+      "frame_inactive": "#16141c",
+      "tab_background_text": "#979bb0",
+      "tab_selected": "#34384e",
+      "tab_text": "#ffffff",
+      "tab_line": "#16141c",
+      "toolbar": "#16141c",
+      "toolbar_text": "#ffffff",
+      "toolbar_field": "#1e2130",
+      "toolbar_field_text": "#ffffff",
+      "toolbar_field_border": "#34384e",
+      "toolbar_field_border_focus": "#e53265",
+      "sidebar": "#16141c",
+      "sidebar_text": "#ffffff",
+      "sidebar_border": "#34384e",
+      "sidebar_highlight": "#25283a",
+      "sidebar_highlight_text": "#2fd6b5",
+      "popup": "#25283a",
+      "popup_text": "#ffffff",
+      "popup_border": "#34384e",
+      "popup_highlight": "#2d3148",
+      "popup_highlight_text": "#ffffff",
+      "icons": "#979bb0",
+      "icons_attention": "#e53265",
+      "ntp_background": "#16141c",
+      "ntp_text": "#ffffff"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "proton-theme@tinyprojekt",
+      "strict_min_version": "128.0"
+    }
+  }
+}
