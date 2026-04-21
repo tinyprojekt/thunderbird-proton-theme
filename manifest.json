@@ -4,6 +4,29 @@
   "description": "A dark theme inspired by Proton Mail for Mozilla Thunderbird 128+",
   "version": "1.1.0",
   "author": "tinyprojekt",
+
+  "permissions": [
+    "storage",
+    "theme",
+    "tabs"
+  ],
+
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "theme_experiment": {
+    "stylesheet": "style.css",
+    "colors": {},
+    "images": {},
+    "properties": {}
+  },
+
   "theme": {
     "colors": {
       "frame": "#16141c",
@@ -34,6 +57,7 @@
       "ntp_text": "#ffffff"
     }
   },
+
   "browser_specific_settings": {
     "gecko": {
       "id": "proton-theme@tinyprojekt",
